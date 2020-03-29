@@ -2,13 +2,9 @@
 #include <string>
 #include <vector>
 
-// char stringtochar(std::string path){
-//     char cpath[path.size()+1];
-//     for(int i = 0; i<path.size()+1;i++){
-//         cpath[0] = path[0];
-//     }
-//     return cpath;
-// }
+void checkra1ncli(){
+    system("/Applications/checkra1n.app/Contents/MacOS/checkra1n --cli");
+}
 
 void bypass(std::string path){
     for (;;){
@@ -92,6 +88,7 @@ int menu(std::string path){
         std::cout << "[1] Install require dependencies  " << std::endl;
         std::cout << "[2] Bypass iCloud on iOS 13.x     " << std::endl;
         std::cout << "[3] iTunes Patch(Sync and Restore)" << std::endl;
+        std::cout << "[4] checkra1n cli                 " << std::endl;
         std::cout << "[0] Exit                          " << std::endl;
         std::cout << "----------------------------------" << std::endl;
         std::cout << "   All credits go to @iRogerosx   " << std::endl;
@@ -106,6 +103,9 @@ int menu(std::string path){
             break;
         case 3:
             iTunesPatch(path);
+            break;
+        case 4:
+            checkra1ncli();
             break;
         case 0:
             exit(0);

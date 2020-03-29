@@ -6,4 +6,4 @@
 - if it still won't work try this in Terminal chmod +x path_to_iCloud_bypass
 
 ## bypass.cpp
-- that's file with code i wrote. It's not perfect I know still learnig :)
+- that's file with code i wrote. It's not perfect I know still learning :)

@@ -7,3 +7,6 @@
 
 ## bypass.cpp
 - that's file with code i wrote. It's not perfect I know still learning :)
+
+## Informations:
+- To use checkra1n cli option you must have checkra1n app installed in Application folder :)

@@ -3,6 +3,20 @@
 #include <vector>
 
 void checkra1ncli(){
+    for (;;){
+        system("clear");
+        std::cout << "---------------------------------------------" << std::endl;
+        std::cout << "        Put your device into dfu mode        " << std::endl;
+        std::cout << "            Then tap 0 to continue           "<< std::endl;
+        std::cout << "---------------------------------------------" << std::endl;
+        char enter = 1;
+        system("/bin/stty raw");
+        enter = getchar();
+        system("/bin/stty cooked");
+        if (enter == '0'){
+            break;
+        }
+    }
     system("/Applications/checkra1n.app/Contents/MacOS/checkra1n --cli");
 }
 
@@ -30,20 +44,11 @@ void bypass(std::string path){
     system(command);
     command = run.c_str();
     system(command);
-    std::cout << "----------------------------------" << std::endl;
-    std::cout << "|           Bypassed :)          |" << std::endl;
-    std::cout << "----------------------------------" << std::endl;
-    system("sleep 3");
-}
-
-void iTunesPatch(std::string path){
-
-    for (;;){
-        system("clear");
-        std::cout << "---------------------------------------------" << std::endl;
-        std::cout << "So now jailbreak your device using checkra1n!" << std::endl;
-        std::cout << "            Then tap 0 to continue           "<< std::endl;
-        std::cout << "---------------------------------------------" << std::endl;
+    for(;;){
+        std::cout << "----------------------------------" << std::endl;
+        std::cout << "|           Bypassed :)          |" << std::endl;
+        std::cout << "----------------------------------" << std::endl;
+        std::cout << "         tap 0 to continue        "<< std::endl;
         char enter = 1;
         system("/bin/stty raw");
         enter = getchar();
@@ -52,6 +57,9 @@ void iTunesPatch(std::string path){
             break;
         }
     }
+}
+
+void iTunesPatch(std::string path){
 
     std::string chmod = std::string("chmod +x ") + path + std::string("/files/bash3.sh");
     std::string run = path + std::string("/files/bash3.sh");
@@ -61,10 +69,19 @@ void iTunesPatch(std::string path){
     command = run.c_str();
     system(command);
     system("clear");
-    std::cout << "----------------------------------" << std::endl;
-    std::cout << "|        iTunes Patched :)       |" << std::endl;
-    std::cout << "----------------------------------" << std::endl;
-    system("sleep 3");
+    for(;;){
+        std::cout << "----------------------------------" << std::endl;
+        std::cout << "|        iTunes Patched :)       |" << std::endl;
+        std::cout << "----------------------------------" << std::endl;
+        std::cout << "         tap 0 to continue        " << std::endl;
+        char enter = 1;
+        system("/bin/stty raw");
+        enter = getchar();
+        system("/bin/stty cooked");
+        if (enter == '0'){
+            break;
+        }
+    }
 }
 
 void preparetobypass(std::string path){

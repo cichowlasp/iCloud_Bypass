@@ -146,7 +146,6 @@ std::string filepath(const char* const argv[]){
 }
 
 int main(int const argc, const char* const argv[], char* envv[]){
-    std::string path = filepath(argv);
-    menu(path);
+    menu(filepath(argv));
     return 0;
 }

@@ -16,3 +16,4 @@
 
 ## Informations:
 - To use checkra1n cli option you must have checkra1n app installed in Application folder :)
+- If after bypass you don't see any effects try reconnect your device and try again!

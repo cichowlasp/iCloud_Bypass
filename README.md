@@ -9,7 +9,7 @@
 - [1] Install brew and all needed dependencies to use this tool :)
 - [2] This option bypass iCloud and active iTunes patch witch allow you to restore backup and sync your device.
 - [3] It's allow you to jailbreak your device using checkra1n directly from dfu mode.
-- [4] This option just close the program.
+- [0] This option just close the program.
 
 ## bypass.cpp
 - that's file with code i wrote. It's not perfect I know still learning :)

@@ -103,9 +103,9 @@ int menu(std::string path){
         std::cout << "|     What do you want to do?    |" << std::endl;
         std::cout << "----------------------------------" << std::endl;
         std::cout << "[1] Install require dependencies  " << std::endl;
-        std::cout << "[2] Bypass iCloud on iOS 13.x     " << std::endl;
-        std::cout << "[3] iTunes Patch(Sync and Restore)" << std::endl;
-        std::cout << "[4] checkra1n cli                 " << std::endl;
+        std::cout << "[2] Bypass iCloud on iOS 13.x and " << std::endl;
+        std::cout << "    iTunes Patch(Sync and Restore)" << std::endl;
+        std::cout << "[3] checkra1n cli                 " << std::endl;
         std::cout << "[0] Exit                          " << std::endl;
         std::cout << "----------------------------------" << std::endl;
         std::cout << "   All credits go to @iRogerosx   " << std::endl;
@@ -117,11 +117,9 @@ int menu(std::string path){
             break;
         case 2:
             bypass(path);
+            iTunesPatch(path);   
             break;
         case 3:
-            iTunesPatch(path);
-            break;
-        case 4:
             checkra1ncli();
             break;
         case 0:

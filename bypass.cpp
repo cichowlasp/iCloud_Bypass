@@ -7,7 +7,9 @@ void checkra1ncli(){
         system("clear");
         std::cout << "---------------------------------------------" << std::endl;
         std::cout << "        Put your device into dfu mode        " << std::endl;
-        std::cout << "            Then tap 0 to continue           "<< std::endl;
+        std::cout << "       After you see done click ctrl+c       " << std::endl;
+        std::cout << "               to return to menu             " << std::endl;
+        std::cout << "            Then tap 0 to continue           " << std::endl;
         std::cout << "---------------------------------------------" << std::endl;
         char enter = 1;
         system("/bin/stty raw");
@@ -131,11 +133,20 @@ int menu(std::string path){
     }
 }
 
-int main(int const argc, const char* const argv[], char* envv[]){
+std::string filepath(const char* const argv[]){
     std::string path = std::string(argv[0]);
-    for(int i = 0;i<14;i++){
-        path.pop_back();
+    for(int i = path.size(); i>0; i--){
+        if(path[i-1]=='/'){
+            break;
+        } else {
+            path.pop_back();
+        }
     }
+    return path;
+}
+
+int main(int const argc, const char* const argv[], char* envv[]){
+    std::string path = filepath(argv);
     menu(path);
     return 0;
 }

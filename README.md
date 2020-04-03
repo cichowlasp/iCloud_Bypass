@@ -6,8 +6,8 @@
 - if it still won't work try this in Terminal chmod +x path_to_iCloud_bypass
 
 ## Options:
-- [1] install brew and all needed dependencies to use this tool :)
-- [2] this option bypass iCloud and active iTunes patch witch allow you to restore backup and sync your device.
+- [1] Install brew and all needed dependencies to use this tool :)
+- [2] This option bypass iCloud and active iTunes patch witch allow you to restore backup and sync your device.
 - [3] It's allow you to jailbreak your device using checkra1n directly from dfu mode.
 - [4] This option just close the program.
 

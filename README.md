@@ -1,4 +1,4 @@
-# iCloud_Bypass
+# iCloud_Bypass [MacOS only!]
 
 ## How to use?
 - just simply double click on iCloud_bypass

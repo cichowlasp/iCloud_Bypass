@@ -38,8 +38,8 @@ void bypass(std::string path){
         }
     }
 
-    std::string chmod = std::string("chmod +x ") + path + std::string("/files/bash2.sh");
-    std::string run = path + std::string("/files/bash2.sh");
+    std::string chmod = std::string("chmod +x ") + path + std::string("files/bash2.sh");
+    std::string run = path + std::string("files/bash2.sh");
     std::cout << path << std::endl;
     const char * command = new char; 
     command = chmod.c_str();
@@ -63,8 +63,8 @@ void bypass(std::string path){
 
 void iTunesPatch(std::string path){
 
-    std::string chmod = std::string("chmod +x ") + path + std::string("/files/bash3.sh");
-    std::string run = path + std::string("/files/bash3.sh");
+    std::string chmod = std::string("chmod +x ") + path + std::string("files/bash3.sh");
+    std::string run = path + std::string("files/bash3.sh");
     const char * command = new char; 
     command = chmod.c_str();
     system(command);
@@ -87,13 +87,14 @@ void iTunesPatch(std::string path){
 }
 
 void preparetobypass(std::string path){
-    std::string chmod = std::string("chmod +x ") + path + std::string("/files/bash1.sh");
-    std::string run = std::string(".") + path + std::string("/files/bash1.sh");
+    std::string chmod = std::string("chmod +x ") + path + std::string("files/bash1.sh");
+    std::string run = path + std::string("files/bash1.sh");
     const char * command = new char; 
     command = chmod.c_str();
     system(command);
     command = run.c_str();
     system(command);
+    system("sleep 3");
     std::cout << "...dependencies installed :)..." << std::endl;
 }
 
